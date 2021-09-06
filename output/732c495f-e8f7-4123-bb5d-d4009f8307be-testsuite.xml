@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1630965284464' stop='1630965304996'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1630965284465' status='failed' stop='1630965303994'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1630965289659' status='failed' stop='1630965303994'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1630965289659' status='passed' stop='1630965292587'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630965292588' status='passed' stop='1630965292962'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630965292963' status='passed' stop='1630965293984'>
+                            <name>I tap "Only this time"</name>
+                            <title>I tap "Only this time"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630965293988' status='failed' stop='1630965303992'>
+                            <name>I wait for element "com.ingresso.cinemas:id/tab_highlight", 10</name>
+                            <title>I wait for element "com.ingresso.cinemas:id/tab_highlight", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='0759aa46-afb2-40b0-b2e4-1b1c5747b8e8-attachment.png' type='image/png' size='1703973'/>
+            </attachments>
+            <failure>
+                <message>element (android=new UiSelector().text("com.ingresso.cinemas:id/tab_highlight")) still not present on page after 10 sec</message>
+                <stack-trace>Error: element (android=new UiSelector().text("com.ingresso.cinemas:id/tab_highlight")) still not present on page after 10 sec
+                    at /home/julio/code/node_modules/webdriverio/build/commands/browser/waitUntil.js:66:23
+                    at async Browser.wrapCommandFn (/home/julio/code/node_modules/@wdio/utils/build/shim.js:104:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

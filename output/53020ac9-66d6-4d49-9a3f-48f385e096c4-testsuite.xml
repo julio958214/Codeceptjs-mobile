@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1630965648727' stop='1630965659017'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1630965648728' status='passed' stop='1630965658787'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1630965653838' status='passed' stop='1630965658787'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1630965653838' status='passed' stop='1630965656714'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630965656715' status='passed' stop='1630965656989'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630965656990' status='passed' stop='1630965658028'>
+                            <name>I tap "Only this time"</name>
+                            <title>I tap "Only this time"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630965658031' status='passed' stop='1630965658786'>
+                            <name>I wait for element "Destaques"</name>
+                            <title>I wait for element "Destaques"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

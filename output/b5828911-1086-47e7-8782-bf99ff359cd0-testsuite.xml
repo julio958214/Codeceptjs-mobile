@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1630968080224' stop='1630968100049'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1630968080224' status='failed' stop='1630968099150'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1630968086196' status='passed' stop='1630968090130'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1630968086196' status='passed' stop='1630968089065'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630968089066' status='passed' stop='1630968089254'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630968089254' status='passed' stop='1630968090130'>
+                            <name>I tap "Only this time"</name>
+                            <title>I tap "Only this time"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1630968090130' status='failed' stop='1630968099150'>
+                    <name>Quando: ele interagir com os botões da home base </name>
+                    <title>Quando: ele interagir com os botões da home base </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1630968090130' status='passed' stop='1630968090627'>
+                            <name>I wait for element {"id":"com.ingresso.cinemas:id/tab_highlight"}, 5</name>
+                            <title>I wait for element {"id":"com.ingresso.cinemas:id/tab_highlight"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630968090627' status='passed' stop='1630968092239'>
+                            <name>I tap {"id":"com.ingresso.cinemas:id/tab_movie"}</name>
+                            <title>I tap {"id":"com.ingresso.cinemas:id/tab_movie"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630968092239' status='failed' stop='1630968099149'>
+                            <name>I see element "Filme"</name>
+                            <title>I see element "Filme"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='b9ed60e7-f0a3-4491-b3c1-bf40ffef590c-attachment.png' type='image/png' size='2155033'/>
+            </attachments>
+            <failure>
+                <message>Element "android=new UiSelector().text("Filme")" was not found by text|CSS|XPath</message>
+                <stack-trace>Error: Element "android=new UiSelector().text("Filme")" was not found by text|CSS|XPath
+                    at new ElementNotFound (/home/julio/code/node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)
+                    at assertElementExists (/home/julio/code/node_modules/codeceptjs/lib/helper/WebDriver.js:2835:11)
+                    at Appium.seeElement (/home/julio/code/node_modules/codeceptjs/lib/helper/WebDriver.js:1372:5)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

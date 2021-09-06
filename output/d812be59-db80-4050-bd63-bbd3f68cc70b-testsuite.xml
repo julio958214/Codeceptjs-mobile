@@ -1,0 +1,74 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1630966583040' stop='1630966596983'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1630966583040' status='failed' stop='1630966595975'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1630966588169' status='passed' stop='1630966592443'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1630966588169' status='passed' stop='1630966591138'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630966591139' status='passed' stop='1630966591414'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630966591414' status='passed' stop='1630966592443'>
+                            <name>I tap "Only this time"</name>
+                            <title>I tap "Only this time"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1630966592443' status='failed' stop='1630966595975'>
+                    <name>Quando: ele interagir com os botões da home base </name>
+                    <title>Quando: ele interagir com os botões da home base </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1630966592444' status='passed' stop='1630966594336'>
+                            <name>I wait for element "Destaques", 5</name>
+                            <title>I wait for element "Destaques", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630966594336' status='passed' stop='1630966594970'>
+                            <name>I see "Destaques"</name>
+                            <title>I see "Destaques"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630966594970' status='failed' stop='1630966595973'>
+                            <name>I wait for element "com.ingresso.cinemas:id/tab_movie"</name>
+                            <title>I wait for element "com.ingresso.cinemas:id/tab_movie"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='b9ba289e-0a74-462a-9840-c5009c08447f-attachment.png' type='image/png' size='1698291'/>
+            </attachments>
+            <failure>
+                <message>element (android=new UiSelector().text("com.ingresso.cinemas:id/tab_movie")) still not present on page after 1 sec</message>
+                <stack-trace>Error: element (android=new UiSelector().text("com.ingresso.cinemas:id/tab_movie")) still not present on page after 1 sec
+                    at /home/julio/code/node_modules/webdriverio/build/commands/browser/waitUntil.js:66:23
+                    at async Browser.wrapCommandFn (/home/julio/code/node_modules/@wdio/utils/build/shim.js:104:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

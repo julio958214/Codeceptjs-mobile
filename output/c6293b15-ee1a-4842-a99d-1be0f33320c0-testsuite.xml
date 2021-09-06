@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1630966725530' stop='1630966743101'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1630966725531' status='failed' stop='1630966742155'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1630966730803' status='passed' stop='1630966734993'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1630966730803' status='passed' stop='1630966733657'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630966733659' status='passed' stop='1630966733976'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630966733977' status='passed' stop='1630966734991'>
+                            <name>I tap "Only this time"</name>
+                            <title>I tap "Only this time"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1630966734993' status='failed' stop='1630966742154'>
+                    <name>Quando: ele interagir com os botões da home base </name>
+                    <title>Quando: ele interagir com os botões da home base </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1630966734994' status='passed' stop='1630966736889'>
+                            <name>I wait for element "Destaques", 5</name>
+                            <title>I wait for element "Destaques", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630966736890' status='passed' stop='1630966737492'>
+                            <name>I see "Destaques"</name>
+                            <title>I see "Destaques"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1630966737492' status='failed' stop='1630966742152'>
+                            <name>I see "com.ingresso.cinemas:id/tab_movie", 5</name>
+                            <title>I see "com.ingresso.cinemas:id/tab_movie", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='87ba7ce9-ead8-4d0d-8d20-bdab6e26a3c3-attachment.png' type='image/png' size='1698326'/>
+            </attachments>
+            <failure>
+                <message>locator.replace is not a function</message>
+                <stack-trace>TypeError: locator.replace is not a function
+                    at isXPath (/home/julio/code/node_modules/codeceptjs/lib/locator.js:457:27)
+                    at new Locator (/home/julio/code/node_modules/codeceptjs/lib/locator.js:48:9)
+                    at Appium.parseLocator (/home/julio/code/node_modules/codeceptjs/lib/helper/Appium.js:1543:13)
+                    at Appium.see (/home/julio/code/node_modules/codeceptjs/lib/helper/Appium.js:1456:41)
+                    at Step.run (/home/julio/code/node_modules/codeceptjs/lib/step.js:66:47)
+                    at /home/julio/code/node_modules/codeceptjs/lib/actor.js:116:23</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
