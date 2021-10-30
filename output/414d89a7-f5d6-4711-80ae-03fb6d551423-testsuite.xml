@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635563969747' stop='1635563983493'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1635563969748' status='failed' stop='1635563982897'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1635563974525' status='failed' stop='1635563982897'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635563974525' status='passed' stop='1635563977200'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635563977200' status='passed' stop='1635563977375'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635563977375' status='passed' stop='1635563978234'>
+                            <name>I tap "ALLOW"</name>
+                            <title>I tap "ALLOW"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635563978234' status='failed' stop='1635563982895'>
+                            <name>I tap </name>
+                            <title>I tap </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='e7851231-e911-4410-8a60-419768a8b896-attachment.png' type='image/png' size='1101679'/>
+            </attachments>
+            <failure>
+                <message>Cannot read property 'element-6066-11e4-a52e-4f735466cecf' of null</message>
+                <stack-trace>TypeError: Cannot read property 'element-6066-11e4-a52e-4f735466cecf' of null
+                    at Browser.$ (/home/julio/Codeceptjs-Mobile/node_modules/webdriverio/build/commands/browser/$.js:85:56)
+                    at Browser.wrapCommandFn (/home/julio/Codeceptjs-Mobile/node_modules/@wdio/utils/build/shim.js:104:38)
+                    at /home/julio/Codeceptjs-Mobile/node_modules/@wdio/utils/build/shim.js:121:69</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

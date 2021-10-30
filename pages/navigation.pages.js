@@ -4,30 +4,50 @@ module.exports = {
 
   fields: {
     btnAccept: 'ACEITAR',
-    btnOnlyThisTime: 'Only this time',
-    btnHighlights: { id: 'com.ingresso.cinemas:id/tab_highlight' },
-    btnFilm: { id: 'com.ingresso.cinemas:id/tab_movie' },
-    btnThather: { id: 'com.ingresso.cinemas:id/tab_theater' },
-    btnAccont: { id: 'com.ingresso.cinemas:id/tab_account' },
+    btnAllow: 'ALLOW',
+    btnOk: 'OK',
+    btnHighlights: '#com.ingresso.cinemas:id/largeLabel',
+    btnFilm: '#com.ingresso.cinemas:id/tab_movie',
+    btnMovieTheater: '#com.ingresso.cinemas:id/tab_theater',
+    btnAccount: '#com.ingresso.cinemas:id/tab_account'
   },
 
   accessApp() {
     I.waitForElement(this.fields.btnAccept, 10)
     I.tap(this.fields.btnAccept)
-    I.tap(this.fields.btnOnlyThisTime)
+    I.tap(this.fields.btnAllow)
   },
 
-  visibleBaseButtons() {
-    I.waitForElement(this.fields.btnHighlights, 10)
-    I.see('Próximas sessões:', { id: 'com.ingresso.cinemas:id/textview_next_sessions' }, true)
-    I.tap(this.fields.btnFilm)
-    I.see('Filmes', { id: 'com.ingresso.cinemas:id/toolbar_title' }, true)
-    I.tap(this.fields.btnThather)
-    I.see('Cinemas', { id: 'com.ingresso.cinemas:id/toolbar_title' }, true)
+  async visibleBaseButtons() {        
+    var result = await tryTo(() => I.waitForElement(this.fields.btnOk, 5))
+    const textDest = 'Destaques'
+    const textFilm = 'Filmes'
+    const textCine = 'Cinemas'
+
+      if (result) {
+        I.waitForElement(this.fields.btnOk, 10)
+        I.tap(this.fields.btnOk)
+      
+        I.waitForElement(this.fields.btnHighlights, 10)
+        I.seeElement(this.fields.btnHighlights, textDest)
+        I.tap(this.fields.btnFilm)
+        I.waitForElement(this.fields.btnFilm, textFilm, 10)
+        I.tap(this.fields.btnMovieTheater)
+        I.waitForElement(this.fields.btnMovieTheater, textCine, 10) 
+      } 
+    
+      else {
+        I.waitForElement(this.fields.btnHighlights, 10)
+        I.seeElement(this.fields.btnHighlights, textDest)
+        I.tap(this.fields.btnFilm)
+        I.waitForElement(this.fields.btnFilm, textFilm, 10)
+        I.tap(this.fields.btnMovieTheater)
+        I.waitForElement(this.fields.btnMovieTheater, textCine, 10) 
+    }
   },
 
   targetingToEachScreen() {
-    I.tap(this.fields.btnAccont)
-    I.see('Minha Conta', { id: 'com.ingresso.cinemas:id/toolbar_title' })
+    I.tap(this.fields.btnAccount)
+    I.seeElement(this.fields.btnAccount, 'Minha Conta', 10)
   }
 }

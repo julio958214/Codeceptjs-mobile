@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635564164272' stop='1635564180462'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1635564164273' status='failed' stop='1635564179859'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1635564169083' status='failed' stop='1635564179859'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635564169083' status='passed' stop='1635564171849'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635564171849' status='passed' stop='1635564172022'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635564172022' status='passed' stop='1635564172843'>
+                            <name>I tap "ALLOW"</name>
+                            <title>I tap "ALLOW"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635564172843' status='failed' stop='1635564179858'>
+                            <name>I tap "OK"</name>
+                            <title>I tap "OK"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='715f0954-d9a9-4455-97f2-6eeec863fda4-attachment.png' type='image/png' size='1099214'/>
+            </attachments>
+            <failure>
+                <message>Touch actions like "tap" need at least some kind of position information like "element", "x" or "y" options, you've none given.</message>
+                <stack-trace>Error: Touch actions like "tap" need at least some kind of position information like "element", "x" or "y" options, you've none given.
+                    at Object.validateParameters (/home/julio/Codeceptjs-Mobile/node_modules/webdriverio/build/commands/constant.js:70:19)
+                    at /home/julio/Codeceptjs-Mobile/node_modules/webdriverio/build/commands/constant.js:88:49
+                    at Array.forEach (&lt;anonymous>)
+                    at Browser.touchAction (/home/julio/Codeceptjs-Mobile/node_modules/webdriverio/build/commands/constant.js:88:21)
+                    at Browser.touchAction (/home/julio/Codeceptjs-Mobile/node_modules/webdriverio/build/commands/browser/touchAction.js:63:35)
+                    at Browser.wrapCommandFn (/home/julio/Codeceptjs-Mobile/node_modules/@wdio/utils/build/shim.js:104:38)
+                    at Browser.&lt;anonymous> (/home/julio/Codeceptjs-Mobile/node_modules/@wdio/utils/build/shim.js:239:24)
+                    at Appium.makeTouchAction (/home/julio/Codeceptjs-Mobile/node_modules/codeceptjs/lib/helper/Appium.js:884:25)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

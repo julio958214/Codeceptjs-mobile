@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635567126097' stop='1635567138538'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1635567126098' status='failed' stop='1635567137749'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1635567130999' status='passed' stop='1635567134748'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635567131000' status='passed' stop='1635567133703'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567133703' status='passed' stop='1635567133873'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567133873' status='passed' stop='1635567134746'>
+                            <name>I tap "ALLOW"</name>
+                            <title>I tap "ALLOW"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1635567134748' status='failed' stop='1635567137749'>
+                    <name>Quando: ele interagir com os botões da home base </name>
+                    <title>Quando: ele interagir com os botões da home base </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635567134749' status='passed' stop='1635567134924'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/tab_highlight", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/tab_highlight", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567134924' status='passed' stop='1635567136422'>
+                            <name>I see element "#com.ingresso.cinemas:id/textview_next_sessions", "Próximas sessões:"</name>
+                            <title>I see element "#com.ingresso.cinemas:id/textview_next_sessions", "Próximas sessões:"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567136422' status='passed' stop='1635567137748'>
+                            <name>I tap "#com.ingresso.cinemas:id/tab_movie"</name>
+                            <title>I tap "#com.ingresso.cinemas:id/tab_movie"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='c9a34231-67f6-4f9a-8668-7b643b0867f3-attachment.png' type='image/png' size='1822691'/>
+            </attachments>
+            <failure>
+                <message>film is not defined</message>
+                <stack-trace>ReferenceError: film is not defined
+                    at Object.visibleBaseButtons (/home/julio/Codeceptjs-Mobile/pages/navigation.pages.js:30:22)
+                    at /home/julio/Codeceptjs-Mobile/navigation/step_definitions/navigation.steps.js:9:20
+                    at runSteps (/home/julio/Codeceptjs-Mobile/node_modules/codeceptjs/lib/interfaces/gherkin.js:58:15)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

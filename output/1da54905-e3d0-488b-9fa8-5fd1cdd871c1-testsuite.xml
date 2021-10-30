@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635564582071' stop='1635564601523'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1635564582072' status='failed' stop='1635564600854'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1635564587116' status='passed' stop='1635564590849'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635564587116' status='passed' stop='1635564589734'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635564589735' status='passed' stop='1635564589943'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635564589944' status='passed' stop='1635564590849'>
+                            <name>I tap "ALLOW"</name>
+                            <title>I tap "ALLOW"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1635564590849' status='failed' stop='1635564600853'>
+                    <name>Quando: ele interagir com os botões da home base </name>
+                    <title>Quando: ele interagir com os botões da home base </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635564590849' status='failed' stop='1635564600852'>
+                            <name>I wait for element "OK", 10</name>
+                            <title>I wait for element "OK", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='1ef7a598-5dce-49c0-a9fa-df1e7dc9e34d-attachment.png' type='image/png' size='1100463'/>
+            </attachments>
+            <failure>
+                <message>element (android=new UiSelector().text("OK")) still not present on page after 10 sec</message>
+                <stack-trace>Error: element (android=new UiSelector().text("OK")) still not present on page after 10 sec
+                    at /home/julio/Codeceptjs-Mobile/node_modules/webdriverio/build/commands/browser/waitUntil.js:66:23
+                    at async Browser.wrapCommandFn (/home/julio/Codeceptjs-Mobile/node_modules/@wdio/utils/build/shim.js:104:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

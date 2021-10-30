@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635567597243' stop='1635567608477'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1635567597244' status='passed' stop='1635567608300'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1635567602007' status='passed' stop='1635567605736'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635567602007' status='passed' stop='1635567604685'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567604685' status='passed' stop='1635567604867'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567604867' status='passed' stop='1635567605735'>
+                            <name>I tap "ALLOW"</name>
+                            <title>I tap "ALLOW"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1635567605736' status='passed' stop='1635567608299'>
+                    <name>Quando: ele interagir com os botões da home base </name>
+                    <title>Quando: ele interagir com os botões da home base </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635567605736' status='passed' stop='1635567605862'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/tab_highlight", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/tab_highlight", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567605862' status='passed' stop='1635567607369'>
+                            <name>I see element "#com.ingresso.cinemas:id/textview_next_sessions", "Próximas sessões:"</name>
+                            <title>I see element "#com.ingresso.cinemas:id/textview_next_sessions", "Próximas sessões:"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567607370' status='passed' stop='1635567607443'>
+                            <name>I see element "#com.ingresso.cinemas:id/tab_movie"</name>
+                            <title>I see element "#com.ingresso.cinemas:id/tab_movie"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635567607444' status='passed' stop='1635567608299'>
+                            <name>I tap "#com.ingresso.cinemas:id/tab_movie"</name>
+                            <title>I tap "#com.ingresso.cinemas:id/tab_movie"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

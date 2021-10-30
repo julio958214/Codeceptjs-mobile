@@ -9,7 +9,7 @@ exports.config = {
   },
   include: {
     I: './steps_file.js',
-    pages: "/home/julio/code/pages.js"
+    pages: "../Codeceptjs-Mobile/pages.js"
   },
   mocha: {},
   bootstrap: null,

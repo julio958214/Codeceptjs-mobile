@@ -1,0 +1,112 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635569641984' stop='1635569672287'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1635569641985' status='failed' stop='1635569671880'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1635569647874' status='passed' stop='1635569666115'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635569647874' status='passed' stop='1635569650653'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569650654' status='passed' stop='1635569650870'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569650871' status='passed' stop='1635569651910'>
+                            <name>I tap "ALLOW"</name>
+                            <title>I tap "ALLOW"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569651913' status='failed' stop='1635569661917'>
+                            <name>I wait for element "OK", 10</name>
+                            <title>I wait for element "OK", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569661921' status='passed' stop='1635569662012'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/largeLabel", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/largeLabel", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569662012' status='passed' stop='1635569662078'>
+                            <name>I see element "#com.ingresso.cinemas:id/largeLabel", "Destaques"</name>
+                            <title>I see element "#com.ingresso.cinemas:id/largeLabel", "Destaques"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569662078' status='passed' stop='1635569662274'>
+                            <name>I tap "#com.ingresso.cinemas:id/tab_movie"</name>
+                            <title>I tap "#com.ingresso.cinemas:id/tab_movie"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569662275' status='passed' stop='1635569663397'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/tab_movie", "Filmes", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/tab_movie", "Filmes", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569663397' status='passed' stop='1635569664589'>
+                            <name>I tap "#com.ingresso.cinemas:id/tab_theater"</name>
+                            <title>I tap "#com.ingresso.cinemas:id/tab_theater"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569664590' status='passed' stop='1635569666115'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/tab_theater", "Cinemas", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/tab_theater", "Cinemas", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1635569666115' status='failed' stop='1635569671880'>
+                    <name>Quando: ele interagir com os botões da home base </name>
+                    <title>Quando: ele interagir com os botões da home base </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635569666115' status='passed' stop='1635569666228'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/largeLabel", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/largeLabel", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635569666228' status='failed' stop='1635569671880'>
+                            <name>I see element "#com.ingresso.cinemas:id/largeLabel", "Destaques"</name>
+                            <title>I see element "#com.ingresso.cinemas:id/largeLabel", "Destaques"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='52894efc-cc86-4084-8e04-0d303eb205dc-attachment.png' type='image/png' size='380620'/>
+            </attachments>
+            <failure>
+                <message>Element "//*[@resource-id='com.ingresso.cinemas:id/largeLabel']" was not found by text|CSS|XPath</message>
+                <stack-trace>Error: Element "//*[@resource-id='com.ingresso.cinemas:id/largeLabel']" was not found by text|CSS|XPath
+                    at new ElementNotFound (/home/julio/Codeceptjs-Mobile/node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)
+                    at assertElementExists (/home/julio/Codeceptjs-Mobile/node_modules/codeceptjs/lib/helper/WebDriver.js:2835:11)
+                    at Appium.seeElement (/home/julio/Codeceptjs-Mobile/node_modules/codeceptjs/lib/helper/WebDriver.js:1372:5)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
