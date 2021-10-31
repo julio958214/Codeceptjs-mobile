@@ -9,13 +9,24 @@ module.exports = {
     btnHighlights: '#com.ingresso.cinemas:id/largeLabel',
     btnFilm: '#com.ingresso.cinemas:id/tab_movie',
     btnMovieTheater: '#com.ingresso.cinemas:id/tab_theater',
-    btnAccount: '#com.ingresso.cinemas:id/tab_account'
+    btnAccount: '#com.ingresso.cinemas:id/tab_account',
+    btnPermission: 'Permitir durante o uso do app'
   },
 
-  accessApp() {
-    I.waitForElement(this.fields.btnAccept, 10)
-    I.tap(this.fields.btnAccept)
-    I.tap(this.fields.btnAllow)
+    aceito(){
+      I.waitForElement(this.fields.btnAccept, 10)
+      I.tap(this.fields.btnAccept)
+    },
+
+ async accessApp() {
+   var location_permission = await tryTo(() => I.waitForElement(this.fields.btnAllow))
+    
+    if (location_permission) {
+      I.tap(this.fields.btnAllow)
+    } 
+    else {
+      I.tap(this.fields.btnPermission)
+    }
   },
 
   async visibleBaseButtons() {        

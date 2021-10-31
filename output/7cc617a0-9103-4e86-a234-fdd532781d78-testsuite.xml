@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635705922739' stop='1635705939416'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1635705922740' status='failed' stop='1635705937654'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1635705927643' status='failed' stop='1635705937653'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635705927643' status='failed' stop='1635705937651'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='aae41802-4a27-4ea5-9de5-660a166803ef-attachment.png' type='image/png' size='881947'/>
+            </attachments>
+            <failure>
+                <message>element (android=new UiSelector().text("ACEITAR")) still not present on page after 10 sec</message>
+                <stack-trace>Error: element (android=new UiSelector().text("ACEITAR")) still not present on page after 10 sec
+                    at /home/julio/Codeceptjs-Mobile/node_modules/webdriverio/build/commands/browser/waitUntil.js:66:23
+                    at async Browser.wrapCommandFn (/home/julio/Codeceptjs-Mobile/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at async Object.accessApp (/home/julio/Codeceptjs-Mobile/pages/navigation.pages.js:22:30)
+                    at async /home/julio/Codeceptjs-Mobile/navigation/step_definitions/navigation.steps.js:6:3
+                    at async runSteps (/home/julio/Codeceptjs-Mobile/node_modules/codeceptjs/lib/interfaces/gherkin.js:62:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635706071281' stop='1635706094868'>
+    <name>navegação pelo app</name>
+    <title>navegação pelo app</title>
+    <test-cases>
+        <test-case start='1635706071282' status='passed' stop='1635706094436'>
+            <name>navegando pelo app Ingresso.com</name>
+            <title>navegando pelo app Ingresso.com</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1635706077749' status='passed' stop='1635706082495'>
+                    <name>Dado: que o usuario acesse o app </name>
+                    <title>Dado: que o usuario acesse o app </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635706077749' status='passed' stop='1635706080990'>
+                            <name>I wait for element "ACEITAR", 10</name>
+                            <title>I wait for element "ACEITAR", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706080991' status='passed' stop='1635706081241'>
+                            <name>I tap "ACEITAR"</name>
+                            <title>I tap "ACEITAR"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706081243' status='failed' stop='1635706082246'>
+                            <name>I wait for element "ALLOW"</name>
+                            <title>I wait for element "ALLOW"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706082250' status='passed' stop='1635706082494'>
+                            <name>I tap "Permitir durante o uso do app"</name>
+                            <title>I tap "Permitir durante o uso do app"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1635706082495' status='passed' stop='1635706092530'>
+                    <name>Quando: ele interagir com os botões da home base </name>
+                    <title>Quando: ele interagir com os botões da home base </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635706082495' status='failed' stop='1635706087498'>
+                            <name>I wait for element "OK", 5</name>
+                            <title>I wait for element "OK", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706087502' status='passed' stop='1635706087869'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/largeLabel", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/largeLabel", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706087870' status='passed' stop='1635706088156'>
+                            <name>I see element "#com.ingresso.cinemas:id/largeLabel", "Destaques"</name>
+                            <title>I see element "#com.ingresso.cinemas:id/largeLabel", "Destaques"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706088156' status='passed' stop='1635706088646'>
+                            <name>I tap "#com.ingresso.cinemas:id/tab_movie"</name>
+                            <title>I tap "#com.ingresso.cinemas:id/tab_movie"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706088646' status='passed' stop='1635706090766'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/tab_movie", "Filmes", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/tab_movie", "Filmes", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706090766' status='passed' stop='1635706091115'>
+                            <name>I tap "#com.ingresso.cinemas:id/tab_theater"</name>
+                            <title>I tap "#com.ingresso.cinemas:id/tab_theater"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706091116' status='passed' stop='1635706092530'>
+                            <name>I wait for element "#com.ingresso.cinemas:id/tab_theater", "Cinemas", 10</name>
+                            <title>I wait for element "#com.ingresso.cinemas:id/tab_theater", "Cinemas", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1635706092530' status='passed' stop='1635706094436'>
+                    <name>Então: ele é direcionado para a tela de cada botão </name>
+                    <title>Então: ele é direcionado para a tela de cada botão </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635706092530' status='passed' stop='1635706093505'>
+                            <name>I tap "#com.ingresso.cinemas:id/tab_account"</name>
+                            <title>I tap "#com.ingresso.cinemas:id/tab_account"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1635706093505' status='passed' stop='1635706094436'>
+                            <name>I see element "#com.ingresso.cinemas:id/tab_account", "Minha Conta", 10</name>
+                            <title>I see element "#com.ingresso.cinemas:id/tab_account", "Minha Conta", 10</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

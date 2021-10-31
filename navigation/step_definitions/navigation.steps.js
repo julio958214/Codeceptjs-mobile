@@ -1,8 +1,9 @@
 const { I, pages } = inject();
 // Add in your custom step files
 
-Given('que o usuario acesse o app',  () => {
-  pages.navigation.accessApp()
+Given('que o usuario acesse o app', async () => {
+  pages.navigation.aceito()
+  await pages.navigation.accessApp()
 })
 
 When('ele interagir com os botões da home base', async () => {
