@@ -13,7 +13,7 @@ module.exports = {
     btnPermission: 'Permitir durante o uso do app'
   },
 
-    aceito(){
+  accessApp(){
       I.waitForElement(this.fields.btnAccept, 10)
       I.tap(this.fields.btnAccept)
     },

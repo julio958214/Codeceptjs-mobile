@@ -2,7 +2,7 @@ const { I, pages } = inject();
 // Add in your custom step files
 
 Given('que o usuario acesse o app', async () => {
-  pages.navigation.aceito()
+  pages.navigation.accessApp()
   await pages.navigation.accessApp()
 })
 
