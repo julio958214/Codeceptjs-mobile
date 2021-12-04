@@ -1,3 +1,3 @@
 module.exports = {
-  interation: require('./pages/interation.pages.js')
+  interation: require('./src/pages/interation.pages.js')
 }

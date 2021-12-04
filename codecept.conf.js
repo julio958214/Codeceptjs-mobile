@@ -2,7 +2,7 @@ exports.config = {
   output: './output',
     helpers: {
       Appium: {
-        app: "/home/julio/nuclone/app/nuclone.apk",
+        app: "./nuclone/app/nuclone.apk",
         platform: "Android",
         desiredCapabilities: {}
       }
@@ -16,8 +16,8 @@ exports.config = {
   teardown: null,
   hooks: [],
   gherkin: {
-    features: './interation/*.feature',
-    steps: ['./interation/step_definitions/interation.steps.js']
+    features: './src/interaction/*.feature',
+    steps: ['./src/interaction/step_definitions/interaction.steps.js']
   },
   plugins: {
     "allure": {
