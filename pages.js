@@ -1,3 +1,3 @@
 module.exports = {
-  navigation: require('./pages/navigation.pages.js')
+  interation: require('./pages/interation.pages.js')
 }
