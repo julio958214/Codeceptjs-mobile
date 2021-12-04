@@ -48,15 +48,12 @@ module.exports = {
 
     clickSeeBalance() {
       //--> I click on the view balance button.
-      I.waitAndTap(this.fields.btnShowBalance, 5)
+      I.waitAndTap(this.fields.btnShowBalance)
     },
 
-    async iSeeMyBalance() {
-      
-      //--> I see my balance on nubank.
-      var myBalance = await I.grabTextFrom(this.fields.btnUserBalance)
-
-      I.waitForText(myBalance, this.fields.btnUserBalance)
+    iSeeMyBalance() {
+      // //--> I see my balance on nubank.
+      I.waitForText('R$', this.fields.btnUserBalance)
       I.seeElement(this.fields.btnUserBalance)
     }
 }

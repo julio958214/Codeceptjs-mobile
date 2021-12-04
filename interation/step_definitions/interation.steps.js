@@ -10,6 +10,6 @@ When('ele clicar na viuslização de saldo', () => {
   pages.interation.clickSeeBalance()
 });
 
-Then('ele consegu ver o quanto de saldo que ele tem no app', async () => {
-  await pages.interation.iSeeMyBalance()
+Then('ele consegu ver o quanto de saldo que ele tem no app', () => {
+  pages.interation.iSeeMyBalance()
 });
