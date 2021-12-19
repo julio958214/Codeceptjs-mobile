@@ -19,6 +19,7 @@
         "@wdio/selenium-standalone-service": "^7.10.1",
         "assert": "^2.0.0",
         "codeceptjs": "^3.1.3",
+        "codeceptjs-assert": "0.0.5",
         "mocha-multi": "^1.1.3",
         "mochawesome": "^6.2.2",
         "webdriverio": "^7.16.3"

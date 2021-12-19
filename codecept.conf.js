@@ -1,15 +1,18 @@
 exports.config = {
   output: './output',
     helpers: {
+          "AssertWrapper" : {
+            "require": "codeceptjs-assert"
+        },
       Appium: {
-        app: "./nuclone/app/nuclone.apk",
+        app: "./Codeceptjs-mobile/app/nuclone.apk",
         platform: "Android",
         desiredCapabilities: {}
       }
   },
   include: {
     I: './steps_file.js',
-    pages: "../nuclone/pages.js"
+    pages: "../Codeceptjs-mobile/pages.js"
   },
   mocha: {},
   bootstrap: null,
