@@ -32,20 +32,20 @@ module.exports = {
     I.waitForElement(this.fields.txtDemand);
     I.waitForElement(this.fields.txtDeposit);
 
-    I.performSwipe({ x: 1045, y: 1836 }, { x: 92, y: 1836 })
+    I.performSwipe({ x: 1045, y: 1836 }, { x: 92, y: 1836 });
 
-    I.wait(2)
+    I.wait(2);
     I.waitForElement(this.fields.txtTransfer);
     I.waitForElement(this.fields.txtPay);
     I.waitForElement(this.fields.txtBlockCard);
     I.waitForElement(this.fields.txtVirtualCard);
 
     var btnTopHeader = await I.grabTextFrom(
-      this.fields.btnTopHeader)
+      this.fields.btnTopHeader);
     I.assertOk(btnTopHeader.includes(this.fields.txtPapito));
 
     var btnNuConta = await I.grabTextFrom(
-      this.fields.txtNuConta)
+      this.fields.txtNuConta);
     I.assertOk(btnNuConta.includes("NuConta"));
   },
 
@@ -55,7 +55,7 @@ module.exports = {
 
   async iSeeMyBalance() {
     var btnUserBalance = await I.grabTextFrom(
-      this.fields.btnUserBalance)
+      this.fields.btnUserBalance);
     I.assertOk(btnUserBalance.includes(this.fields.txtR$));
 
     I.seeElement(this.fields.btnUserBalance);
