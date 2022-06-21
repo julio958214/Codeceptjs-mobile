@@ -6,9 +6,6 @@ module.exports = function() {
     waitAndTap: function(locator, timeout = 5) {
       this.waitForElement(locator, timeout)
       this.tap(locator)
-
-      let assert = require('assert');
-    
     },
 
     // async doASwipe(params = {}){
